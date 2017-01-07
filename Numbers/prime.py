@@ -12,7 +12,7 @@ def is_a_prime(x):
 
 # standard boilerplate
 if __name__ == '__main__':
-    n = int(raw_input('Enter the number to find prime factors of: '))
+    n = int(input('Enter the number to find prime factors of: '))
 
     factors = []
 
@@ -21,4 +21,4 @@ if __name__ == '__main__':
             if is_a_prime(i):
                 factors.append(i)
                 n /= i
-    print factors
+    print(factors)

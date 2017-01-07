@@ -9,11 +9,11 @@ if __name__ == '__main__':
 
     change = given - cost
 
-    print "\n"
+    print("\n")
     if change < 0:
-        print "Please ask for $%.2f more from the customer." % (-change) # double negation
+        print("Please ask for $%.2f more from the customer." % (-change))  # double negation
     else:
-        print "The change is $%.2f." % change
+        print("The change is $%.2f." % change)
 
         q = 0 # 0.25
         d = 0 # 0.10
@@ -34,9 +34,9 @@ if __name__ == '__main__':
         if change >= 1:
             p = change # rest all change is in pennies
 
-    print "Give the following change to the customer:"
-    print "Quarters: %d\tDimes: %d\tNickels: %d\tPennies: %d" \
-          % (q, d, n, p)
+    print("Give the following change to the customer:")
+    print("Quarters: %d\tDimes: %d\tNickels: %d\tPennies: %d"
+          % (q, d, n, p))
 
     # DEBUG
     # print "Total change per the number of coins is %.2f" % \

@@ -3,7 +3,7 @@
 # program generate the Fibonacci sequence to that number
 # or to the Nth number
 
-n = int(raw_input('How many numbers do you need? '))
+n = int(input('How many numbers do you need? '))
 series = [1]
 
 while len(series) < n:
@@ -12,4 +12,4 @@ while len(series) < n:
     else:
         series.append(series[-1] + series[-2])
 
-print series
+print(series)

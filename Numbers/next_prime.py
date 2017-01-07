@@ -16,10 +16,10 @@ def next_prime(current):
 if __name__ == '__main__':
     current_prime = 2
     while True:
-        response = raw_input('Do you want the next prime? (Y/N) ')
+        response = input('Do you want the next prime? (Y/N) ')
 
         if response.lower().startswith('y'):
-            print current_prime
+            print(current_prime)
             current_prime = next_prime(current_prime)
         else:
             break

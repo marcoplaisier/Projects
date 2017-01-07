@@ -31,20 +31,20 @@ def decimal_to_binary(decimal):
     return binary
 
 if __name__ == '__main__':
-    print """
+    print("""
     1. Binary to Decimal
     2. Decimal to Binary\n
-    """
+    """)
 
     choice = input("Make a choice: ")
 
     if choice == 1:
         binary = input("Binary to convert: ")
-        print "The binary number %d in decimal is %d" % \
-              (binary, binary_to_decimal(binary))
+        print("The binary number %d in decimal is %d" % \
+              (binary, binary_to_decimal(binary)))
     elif choice == 2:
         decimal = input("Decimal to convert: ")
-        print "The decimal number %d in binary is %s" % \
-              (decimal, decimal_to_binary(decimal))
+        print("The decimal number %d in binary is %s" % \
+              (decimal, decimal_to_binary(decimal)))
     else:
-        print "Invalid choice"
+        print("Invalid choice")
